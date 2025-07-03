@@ -12,7 +12,6 @@ void main()
 
 
      srand(time(0));
-
      for(r = 0; r < 10 ; r ++)
      {
          total = 0;
