@@ -31,12 +31,12 @@ int equals(struct time t1, struct time t2)
 // < 0 -> t1 < t2
 int compare(struct time t1, struct time t2)
 {
-
+     return totalseconds(t1) - totalseconds(t2);
 }
 
 struct time max(struct time t1, struct time t2)
 {
-
+    return  totalseconds(t1) > totalseconds(t2) ? t1 : t2;
 }
 
 
