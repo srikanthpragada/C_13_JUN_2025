@@ -1,0 +1,33 @@
+// PROGRAM TO READ NAMES.TXT AND PRINT ITS CONTENTS
+// DATE : -JUL-
+
+#INCLUDE <STDIO.H>
+#INCLUDE <CONIO.H>
+#INCLUDE <STDLIB.H>
+
+
+VOID MAIN()
+{
+ FILE * FP;
+ INT CH;
+
+       FP = FOPEN("NAMES.TXT", "RT");
+
+       IF (FP == NULL)
+       {
+           PRINTF("SORRY! COULD NOT OPEN FILE!");
+           EXIT(); // EXIT WITH FAILURE
+       }
+
+
+       WHILE()
+       {
+           CH = FGETC(FP);
+           IF (CH == EOF)
+              BREAK;
+
+           PUTCH(CH);
+       }
+
+       FCLOSE(FP);
+}
